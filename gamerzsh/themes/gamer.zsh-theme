@@ -24,7 +24,7 @@ fi
 
 autoload -Uz vcs_info
 # enable VCS systems you use
-zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:*' enable git 
 
 # check-for-changes can be really slow.
 # you should disable it, if you work with large repositories
@@ -50,17 +50,20 @@ zstyle ':vcs_info:*:prompt:*' formats       "${FMT_BRANCH}"
 zstyle ':vcs_info:*:prompt:*' nvcsformats   ""
 
 
-function steeef_chpwd {
+function steeef_chpwd 
+{
   PR_GIT_UPDATE=1
 }
 
-function steeef_preexec {
+function steeef_preexec
+{
   case "$2" in
   *git*|*svn*) PR_GIT_UPDATE=1 ;;
   esac
 }
 
-function steeef_precmd {
+function steeef_precmd 
+{
   (( PR_GIT_UPDATE )) || return
 
 # check for untracked files or updated submodules, since vcs_info doesn't
