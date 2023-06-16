@@ -1,8 +1,8 @@
 -- Sistem panosunu kulan
-vim.o.clipboard = 'unnamedplus'
-vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
+-- vim.o.clipboard = 'unnamedplus'
+-- vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 -- Fareyi kulan
-vim.o.mouse = 'a'
+-- vim.o.mouse = 'a'
 
 -- Tab
 -- Her TAB da kaç boşluk bırakacagı
@@ -33,8 +33,14 @@ vim.o.smartcase = true
 
 -- Ek dosya Sistem ayarları
 -- Swapı Kapatma
-vim.opt.swapfile = false 
+vim.opt.swapfile = false
+-- Yedekleme yapma
+vim.opt.backup = false
+vim.opt.writebackup = false
 
 -- ne olduğunu bilmiyorum :)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+-- Always show the signcolumn, otherwise it would shift the text each time
+-- diagnostics appeared/became resolved
+vim.opt.signcolumn = "yes"

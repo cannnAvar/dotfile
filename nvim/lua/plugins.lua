@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
     use 'nvim-tree/nvim-web-devicons'
+    use {'neoclide/coc.nvim', branch = 'release'}
     use
     {
         'nvim-tree/nvim-tree.lua',

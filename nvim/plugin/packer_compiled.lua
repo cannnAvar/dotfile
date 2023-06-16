@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/cannnavar/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/cannnavar/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/cannnavar/.local/share/nvim/site/pack/packer/start/lualine.nvim",
