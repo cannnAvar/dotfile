@@ -8,6 +8,8 @@ local opts =
 -- Normal mode --
 -----------------
 
+vim.keymap.set("n", "<F5>", "<Esc>:w<CR>:split<CR>:term python %<CR>")
+
 -- Nvim-tree
 vim.keymap.set("n", "<C-n>", ":NvimTreeFindFileToggle<CR>")
 

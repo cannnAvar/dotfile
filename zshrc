@@ -94,5 +94,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias sla="git --no-pager log --oneline --decorate --all --graph -35"
+
+
 clear
 neofetch
